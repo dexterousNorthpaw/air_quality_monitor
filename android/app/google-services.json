@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "5556609844-6u5id3kmlfpjk4j0itijco7pg9tu0hua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.air_quality_monitor",
+            "certificate_hash": "2595283e02705d68a5256077b77c9d97145b88b0"
+          }
+        },
+        {
+          "client_id": "5556609844-ragkfeubplk6khggp25dl64fcdvhrf83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.air_quality_monitor",
+            "certificate_hash": "692a0a7bf5e8d6ae4cd1498c0f8d76d210139438"
+          }
+        },
+        {
           "client_id": "5556609844-i1o5auu6d9sh6ct9rdrkm35oidau30s9.apps.googleusercontent.com",
           "client_type": 3
         }
