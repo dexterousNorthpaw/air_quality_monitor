@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5556609844",
+    "firebase_url": "https://air-quality-monitoring-97cbe-default-rtdb.firebaseio.com",
+    "project_id": "air-quality-monitoring-97cbe",
+    "storage_bucket": "air-quality-monitoring-97cbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5556609844:android:b6b8d0ea0976b2c3aefb61",
+        "android_client_info": {
+          "package_name": "com.example.air_quality_monitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5556609844-i1o5auu6d9sh6ct9rdrkm35oidau30s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0U1hUJlm9oMNLKYBzy67_egi7uEnT5rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5556609844-i1o5auu6d9sh6ct9rdrkm35oidau30s9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
