@@ -8,12 +8,10 @@ class LoginFields extends StatelessWidget {
   final bool obscureText;
   final String hintText;
   final void Function()? onPressed;
-  final Function() onTapTextField;
   const LoginFields(
       {required this.fieldName,
       required this.textEditingController,
       required this.hintText,
-      required this.onTapTextField,
       this.obscureText = false,
       this.onPressed,
       super.key});
@@ -40,7 +38,6 @@ class LoginFields extends StatelessWidget {
           const SizedBox(height: 8),
           TextFormField(
             controller: textEditingController,
-            onTap: onTapTextField,
             autovalidateMode: AutovalidateMode.onUserInteraction,
             decoration: InputDecoration(
               filled: true,
