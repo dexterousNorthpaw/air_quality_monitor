@@ -1,5 +1,5 @@
 import 'package:air_quality_monitor/providers/data_provider.dart';
-import 'package:air_quality_monitor/screens/loginScreen.dart';
+import 'package:air_quality_monitor/screens/login_screen.dart';
 import 'package:air_quality_monitor/services/firebase_auth.dart';
 import 'package:air_quality_monitor/shared/dashboard_fields.dart';
 import 'package:air_quality_monitor/shared/popup_dialog.dart';

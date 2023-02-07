@@ -1,5 +1,5 @@
 import 'package:air_quality_monitor/providers/data_provider.dart';
-import 'package:air_quality_monitor/screens/loginScreen.dart';
+import 'package:air_quality_monitor/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import "package:flutter/material.dart";
 import 'package:flutter/services.dart';
