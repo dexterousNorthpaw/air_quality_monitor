@@ -1,4 +1,4 @@
-import 'package:air_quality_monitor/screens/homeScreen.dart';
+import 'package:air_quality_monitor/screens/home_screen.dart';
 import 'package:air_quality_monitor/services/firebase_auth.dart';
 import 'package:air_quality_monitor/shared/custom_button.dart';
 import 'package:air_quality_monitor/shared/login_fields.dart';
