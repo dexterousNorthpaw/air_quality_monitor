@@ -38,8 +38,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_database: ^10.0.9
   firebase_core: ^2.4.1
+  firebase_auth: ^4.2.4
   percent_indicator: ^4.2.2
+  google_fonts: ^4.0.3
   syncfusion_flutter_gauges: ^20.4.48
+  font_awesome_flutter: ^10.3.0
 
 dev_dependencies:
   flutter_test:
