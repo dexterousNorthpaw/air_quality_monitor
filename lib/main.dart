@@ -12,6 +12,7 @@ void main() async {
     await Future.delayed(const Duration(seconds: 3));
     SystemChrome.restoreSystemUIOverlays();
   });
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }
 
