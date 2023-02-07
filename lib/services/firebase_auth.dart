@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-class FirebaseServices {
-  FirebaseAuth auth = FirebaseAuth.instance;
-  Future<Map<String, dynamic>> login(
+class FirebaseAuthServices {
+  static FirebaseAuth auth = FirebaseAuth.instance;
+  static Future<Map<String, dynamic>> login(
       {required String email, required String password}) async {
     try {
       UserCredential user = await auth.signInWithEmailAndPassword(
@@ -11,5 +11,9 @@ class FirebaseServices {
     } catch (e) {
       return {'status': false, 'error': e.toString().split(']').last.trim()};
     }
+  }
+
+  static void logout() async {
+    await auth.signOut();
   }
 }
