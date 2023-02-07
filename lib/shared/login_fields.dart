@@ -41,6 +41,7 @@ class LoginFields extends StatelessWidget {
           TextFormField(
             controller: textEditingController,
             onTap: onTapTextField,
+            autovalidateMode: AutovalidateMode.onUserInteraction,
             decoration: InputDecoration(
               filled: true,
               fillColor: Colors.white.withOpacity(0.9),
@@ -55,6 +56,14 @@ class LoginFields extends StatelessWidget {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
+              ),
+              errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.red, width: 0.5),
+              ),
+              focusedErrorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.red, width: 0.5),
               ),
               suffixIcon: onPressed == null
                   ? null
