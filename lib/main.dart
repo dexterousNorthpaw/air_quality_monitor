@@ -8,12 +8,12 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-      overlays: [SystemUiOverlay.bottom]);
-  SystemChrome.setSystemUIChangeCallback((systemOverlaysAreVisible) async {
-    await Future.delayed(const Duration(seconds: 3));
-    SystemChrome.restoreSystemUIOverlays();
-  });
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle.dark.copyWith(
+      systemNavigationBarColor: Colors.transparent,
+      systemStatusBarContrastEnforced: false,
+    ),
+  );
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }
