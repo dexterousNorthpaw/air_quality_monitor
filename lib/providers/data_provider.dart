@@ -6,16 +6,15 @@ class DataProvider extends ChangeNotifier {
   DataModel data = DataModel();
 
   getData() {
-    FirebaseDatabase.instance
-        .ref('Values')
-        .onValue
-        .listen((DatabaseEvent event) async {
-      final placeholder = event.snapshot.value;
-      data = placeholder == null
-          ? DataModel()
-          : DataModel.fromJson(placeholder as Map);
-      await Future.delayed(const Duration(milliseconds: 1));
-      notifyListeners();
-    });
+    FirebaseDatabase.instance.ref('Values').onValue.listen(
+      (DatabaseEvent event) async {
+        final placeholder = event.snapshot.value;
+        data = placeholder == null
+            ? DataModel()
+            : DataModel.fromJson(placeholder as Map);
+        await Future.delayed(const Duration(milliseconds: 1));
+        notifyListeners();
+      },
+    );
   }
 }
