@@ -5,11 +5,12 @@ class DashboardFields extends StatelessWidget {
   final String fieldName;
   final String fieldValue;
   final bool removePadding;
-  const DashboardFields(
-      {super.key,
-      required this.fieldName,
-      required this.fieldValue,
-      this.removePadding = false});
+  const DashboardFields({
+    super.key,
+    required this.fieldName,
+    required this.fieldValue,
+    this.removePadding = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +20,16 @@ class DashboardFields extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: Text(fieldName,
-                style: GoogleFonts.lato(
-                  textStyle: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff53617c),
-                  ),
-                )),
+            child: Text(
+              fieldName,
+              style: GoogleFonts.lato(
+                textStyle: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xff53617c),
+                ),
+              ),
+            ),
           ),
           Container(
             margin: const EdgeInsets.only(left: 20),
@@ -35,9 +38,10 @@ class DashboardFields extends StatelessWidget {
               fieldValue,
               style: GoogleFonts.lato(
                 textStyle: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff6186c5)),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xff6186c5),
+                ),
               ),
             ),
           )
